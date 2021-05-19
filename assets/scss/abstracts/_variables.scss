@@ -1,6 +1,6 @@
 /*  VARIABLES CSS */
 :root {
-  --header-height: 3rem;
+  --header-height: 3.25rem;
   /*   TRANSITION */
   --transition-bounce: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
   /* COLORS */ /* #27262C */
@@ -11,8 +11,8 @@
   --body-font: "Source Sans Pro", sans-serif;
   --normal-font-size: 1.05rem;
   --big-font-size: 1.25rem;
-  --biggest-font-size: 1.5rem;
-  --font-medium: 700
+  --biggest-font-size: 1.45rem;
+  --font-medium: 600;
   
   /* Z-INDEX */
   --z-fixed: 100; //always  visible
@@ -22,6 +22,6 @@
     :root{
     --normal-font-size: 1.25rem;
     --big-font-size: 1.45rem;
-    --biggest-font-size: 1.85rem;
-    }
+    --biggest-font-size: 1.65rem;
+    } 
 }

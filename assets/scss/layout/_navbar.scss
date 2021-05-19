@@ -1,14 +1,11 @@
 .header {
-  width: 100%;
   position: sticky;
   z-index: var(--z-fixed);
   & .nav {
-    max-width: 80%;
     height: var(--header-height);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 auto;
     padding: 0.65rem;
     &__logo {
       letter-spacing: 0.15rem;
@@ -32,7 +29,7 @@
         }
         &__link {
           color: var(--text-color);
-          font-size: var(--big-font-size);
+          font-size: var(--normal-font-size);
         }
         &__icon {
           color: var(--text-color);

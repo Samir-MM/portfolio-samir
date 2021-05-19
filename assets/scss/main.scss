@@ -3,6 +3,7 @@
 
 /* FILE IMPORT */
 @import "layout/_navbar.scss";
+
 @import "abstracts/_variables.scss";
 
 /* HIDE SCROLLBAR */
@@ -19,6 +20,10 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
+}
+.bd-container {
+  width: 80vw;
+  margin: 0 auto;
 }
 @media only screen and (min-width: 1600px) {
   /* Styles here */
