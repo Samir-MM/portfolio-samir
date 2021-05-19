@@ -1,0 +1,16 @@
+/* SHOW MENU SCRIPT */
+const showMenu = (toggleId, navId) => {
+  const toggle = document.getElementById(toggleId);
+  const nav = document.getElementById(navId);
+  // Validate that variables exist
+  if (toggle && nav) {
+    toggle.addEventListener("click", () => {
+      // We add the show-menu class to the div tag with the nav__menu class
+      nav.classList.toggle("show-menu");
+    });
+  }
+};
+//RUN THE FUNCTION
+showMenu("nav-toggle", "nav-menu");
+
+/* ANIMATED MENU ICON */

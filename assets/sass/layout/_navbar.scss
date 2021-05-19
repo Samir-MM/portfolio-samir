@@ -1,0 +1,101 @@
+.header {
+  width: 100%;
+  position: sticky;
+  z-index: var(--z-fixed);
+  & .nav {
+    max-width: 80%;
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0.65rem;
+    &__logo {
+      letter-spacing: 0.15rem;
+      font-size: var(--biggest-font-size);
+    }
+    @media screen and(min-width: 768px) {
+      .nav {
+        &__menu {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        &__list {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0 1.65rem;
+        }
+        &__item {
+          margin: 0 0.65rem;
+        }
+        &__link {
+          color: var(--text-color);
+          font-size: var(--big-font-size);
+        }
+        &__icon {
+          color: var(--text-color);
+          font-size: var(--biggest-font-size);
+          margin: 0 0.25rem;
+        }
+        &__toggle {
+          display: none;
+        }
+      }
+    }
+
+    @media only screen and (max-width: 768px) {
+      /* Tablet Styles here */
+      &__menu {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        right: 0;
+        width: 80%;
+        margin: 1.65rem auto;
+        text-align: center;
+        background-color: var(--first-color);
+        transition: var(--transition-bounce);
+      }
+      /* Show menu */
+      &__menu.show-menu {
+        top: calc(var(--header-height) + 1rem);
+      }
+      &__list {
+        margin: 1.65rem auto;
+      }
+      &__item {
+        margin: 1.65rem auto;
+      }
+      &__link {
+        text-transform: uppercase;
+        font-size: var(--big-font-size);
+        font-weight: var(--font-medium);
+      }
+      &__social {
+        margin: 1.65rem auto;
+      }
+      &__icon {
+        padding: 0.65rem;
+        font-size: var(--biggest-font-size);
+      }
+      &__toggle {
+        cursor: pointer;
+        font-size: calc(var(--big-font-size) + 0.65rem);
+        z-index: var(--z-fixed);
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  /* Styles here */
+}
+@media only screen and (min-width: 1200px) {
+  /* Styles here */
+}
+
+@media only screen and (min-width: 320px) {
+  /* Styles here */
+}

@@ -1,0 +1,34 @@
+/* FONT IMPORT */
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap");
+
+/* FILE IMPORT */
+@import "layout/_navbar.scss";
+@import "abstracts/_variables.scss";
+
+/* HIDE SCROLLBAR */
+::-webkit-scrollbar {
+  display: none;
+}
+/* ALL GENERAL STYLES */
+* {
+  scroll-behavior: smooth;
+  text-decoration: none;
+  color: var(--text-color);
+}
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+}
+@media only screen and (min-width: 1600px) {
+  /* Styles here */
+}
+@media only screen and (min-width: 1200px) {
+  /* Styles here */
+}
+@media only screen and (min-width: 768px) {
+  /* Styles here */
+}
+@media only screen and (min-width: 320px) {
+  /* Styles here */
+}
