@@ -82,7 +82,7 @@
     width: 2.4rem;
     height: 0.3rem;
     margin-bottom: 4px;
-    background-color: var(--first-color);
+    background-color: var(--body-color);
     border-radius: 4px;
     right: 0;
   }
@@ -100,7 +100,7 @@
     bottom: 0;
     background-color: var(--body-color);
     text-align: right;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.75), rgba(168, 167, 167, 0.725));
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.75), rgba(221, 221, 221, 0.725));
     backdrop-filter: blur(4px);
     border-radius: 4px;
   }
@@ -533,7 +533,7 @@
   --header-height: 3.25rem;
   /*   TRANSITION */
   --size-menu: calc(0vw + 40px);
-  --size-menu-boton: calc(0vw - 210px);
+  --size-menu-boton: calc(0vw - 30px);
   --transition-bounce: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
   /* COLORS */
   /* #27262C */

@@ -76,7 +76,7 @@
     width: 2.4rem;
     height: 0.3rem;
     margin-bottom: 4px;
-    background-color: var(--first-color);
+    background-color: var(--body-color);
     border-radius: 4px;
     right: 0;
   }
@@ -96,7 +96,7 @@
       background: linear-gradient(
         to bottom,
         rgba(255, 255, 255, 0.75),
-        rgba(168, 167, 167, 0.725)
+        rgba(221, 221, 221, 0.725)
       );
       backdrop-filter: blur(4px);
       border-radius: 4px;
