@@ -180,9 +180,39 @@
 
 .home__button {
   display: block;
-  padding: 0.65rem;
-  margin-top: 0.65rem;
-  border: 1px solid var(--text-color);
+  margin-top: 1.65rem;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.home__button .button {
+  margin: 0 0.85rem;
+  position: relative;
+  padding: 0 1.65rem;
+  width: auto;
+  height: 60px;
+  border-radius: 2px;
+  border: 1px solid #c3c8de;
+  background-color: #fff;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(65, 72, 86, 0.1);
+  transition: transform 0.3s linear, color 0.1s linear, #4f29f0 0.15s linear;
+}
+
+.home__button .button > span {
+  display: inline-block;
+  position: relative;
+  transition: transform 0.15s linear;
+  font-size: var(--normal-font-size);
+}
+
+.home__button .button.fill {
+  background: var(--accent-color);
+}
+
+.home__button .button.fill span {
+  color: #fff;
 }
 
 .home__right {
@@ -334,14 +364,14 @@
   width: 125px;
   height: 125px;
   top: 60px;
-  right: 160px;
+  right: 120px;
 }
 
 .Slide--snippets .Slide-decor.two {
   width: 140px;
-  height: 140px;
+  height: 120px;
   top: 120px;
-  right: 100px;
+  right: 130px;
 }
 
 .Slide--snippets .Slide-decor.three {
@@ -544,9 +574,10 @@
   --transition-bounce: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
   /* COLORS */
   /* #27262C */
-  --body-color: #f5f3f4;
+  --body-color: #e8ebf3;
   --text-color: #343a46;
   --first-color: #ecf0f7;
+  --accent-color: #1C3A59;
   --proyects-color: #e16684;
   --fragmentos-color: #edcd5a;
   --cheatsheet-color: #0379a0;
