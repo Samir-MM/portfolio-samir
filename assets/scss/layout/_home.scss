@@ -286,6 +286,11 @@
   .home {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
+    &__subtitle,
+    &__title,
+    &__description {
+      color: var(--body-color);
+    }
     &__canvas {
       margin: 0;
       margin-bottom: 2.65rem;
