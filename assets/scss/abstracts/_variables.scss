@@ -2,26 +2,36 @@
 :root {
   --header-height: 3.25rem;
   /*   TRANSITION */
+  --size-menu: calc(0vw + 40px);
+  --size-menu-boton: calc(0vw - 210px);
   --transition-bounce: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
   /* COLORS */ /* #27262C */
-  --body-color: #e9e9e9;
-  --text-color: #353b48;
-  --first-color: #ecf3f2;
+  --body-color: #f5f3f4;
+  --text-color: #343a46;
+  --first-color: #ecf0f7;
+  --proyects-color: #e16684;
+  --fragmentos-color: #edcd5a;
+  --cheatsheet-color: #0379a0;
   /* FONT */
   --body-font: "Source Sans Pro", sans-serif;
-  --normal-font-size: 1.05rem;
+  --title-font: "Montserrat", sans-serif;
+  --normal-font-size: 1.1rem;
   --big-font-size: 1.25rem;
-  --biggest-font-size: 1.45rem;
+  --biggest-font-size: 1.55rem;
+  --display-font-size: 4.65rem;
+  --font-normal: 400;
   --font-medium: 600;
-  
+  --font-semi-bold: 700;
+
   /* Z-INDEX */
+  --z-tooltip: 10; //layer up visible
   --z-fixed: 100; //always  visible
-  
 }
-@media screen and (min-width: 768px) {
-    :root{
+@media screen and (max-width: 768px) {
+  :root {
     --normal-font-size: 1.25rem;
     --big-font-size: 1.45rem;
     --biggest-font-size: 1.65rem;
-    } 
+    --display-font-size: 2.65rem;
+  }
 }

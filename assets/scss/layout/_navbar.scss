@@ -1,91 +1,128 @@
 .header {
-  position: sticky;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
   z-index: var(--z-fixed);
+
   & .nav {
     height: var(--header-height);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.65rem;
+    margin: 0.65rem auto;
     &__logo {
       letter-spacing: 0.15rem;
       font-size: var(--biggest-font-size);
     }
-    @media screen and(min-width: 768px) {
-      .nav {
-        &__menu {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-        &__list {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          margin: 0 1.65rem;
-        }
-        &__item {
-          margin: 0 0.65rem;
-        }
-        &__link {
-          color: var(--text-color);
-          font-size: var(--normal-font-size);
-        }
-        &__icon {
-          color: var(--text-color);
-          font-size: var(--biggest-font-size);
-          margin: 0 0.25rem;
-        }
-        &__toggle {
-          display: none;
-        }
-      }
-    }
+  }
+}
 
-    @media only screen and (max-width: 768px) {
-      /* Tablet Styles here */
-      &__menu {
-        position: fixed;
-        top: -100%;
-        left: 0;
-        right: 0;
-        width: 80%;
-        margin: 1.65rem auto;
-        text-align: center;
-        background-color: var(--first-color);
-        transition: var(--transition-bounce);
-      }
-      /* Show menu */
-      &__menu.show-menu {
-        top: calc(var(--header-height) + 1rem);
-      }
-      &__list {
-        margin: 1.65rem auto;
-      }
-      &__item {
-        margin: 1.65rem auto;
-      }
-      &__link {
-        text-transform: uppercase;
-        font-size: var(--big-font-size);
-        font-weight: var(--font-medium);
-      }
-      &__social {
-        margin: 1.65rem auto;
-      }
-      &__icon {
-        padding: 0.65rem;
-        font-size: var(--biggest-font-size);
-      }
-      &__toggle {
-        cursor: pointer;
-        font-size: calc(var(--big-font-size) + 0.65rem);
-        z-index: var(--z-fixed);
-      }
+/* BIG DISPLAY */
+@media screen and(min-width: 868px) {
+  .nav {
+    background: rgba(253, 250, 246, 0.75); /*FIRST COLOR VARIABLES */
+    padding: 0.65rem 1.65rem;
+    backdrop-filter: blur(4px);
+    border-radius: 5px;
+    &__menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &__list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 1.65rem;
+    }
+    &__item {
+      margin: 0 0.65rem;
+    }
+    &__link {
+      color: var(--text-color);
+      font-size: var(--normal-font-size);
+    }
+    &__social-icon {
+      color: var(--text-color);
+      font-size: var(--biggest-font-size);
+      margin: 0 0.25rem;
+    }
+    &__toggle {
+      display: none;
     }
   }
 }
 
+/* SMALL DISPLAY */
+@media only screen and (max-width: 868px) {
+  .menu {
+    top: 0;
+    right: 0;
+    transition: var(--transition-bounce);
+    z-index: var(--z-fixed);
+  }
+  .menu.active {
+    transform: translate3d(var(--size-menu-boton), 0, 0);
+  }
+  .menu.active ~ .nav__menu {
+    transform: translate3d(var(--size-menu), 0, 0);
+  }
+  .menu__item--1,
+  .menu__item--2,
+  .menu__item--3 {
+    position: relative;
+    width: 2.4rem;
+    height: 0.3rem;
+    margin-bottom: 4px;
+    background-color: var(--first-color);
+    border-radius: 4px;
+    right: 0;
+  }
+
+  .nav {
+    &__menu {
+      transform: translate3d(100vw, 0, 0);
+      transition: transform 0.4s ease 0s;
+      width: 240px;
+      height: 100vh;
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background-color: var(--body-color);
+      text-align: right;
+      background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.75),
+        rgba(168, 167, 167, 0.725)
+      );
+      backdrop-filter: blur(4px);
+      border-radius: 4px;
+    }
+    /*END*/
+    &__list {
+      margin-top: 3.65rem;
+      padding-right: 2.65rem;
+    }
+    &__item {
+      padding: 0.65rem 0;
+    }
+    &__link {
+      font-size: var(--big-font-size);
+    }
+    &__social {
+      margin: 1.65rem 2.65rem;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &__social-icon i {
+      padding: 0.65rem 0;
+      font-size: var(--display-font-size);
+    }
+  }
+}
 @media only screen and (min-width: 1600px) {
   /* Styles here */
 }

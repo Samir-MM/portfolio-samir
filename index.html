@@ -3,8 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>.(Sam)</title>
-
+    <title>.Samir</title>
+    <!-- LINK TO FAVICON -->
+    <link
+      rel="shortcut icon"
+      href="/assets/img/favicon.png"
+      type="image/x-icon"
+    />
     <!-- LINK TO RESET CSS -->
     <link
       rel="stylesheet"
@@ -17,13 +22,25 @@
       href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <!-- LINK TO SWIPER JS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css"
+    />
   </head>
   <body>
+    <!-- BACKGROUND ANIMATION -->
+    <canvas id="glscreen" class="glscreen"></canvas>
     <!-- NAVBAR START -->
     <header class="header bd-container">
       <nav class="nav">
         <div class="nav__logo">
-          <a href="#" class="nav__logo--text">.(Sam)</a>
+          <a href="#" class="nav__logo--text">.Samir</a>
+        </div>
+        <div class="menu" type="button">
+          <div class="menu__item--1"></div>
+          <div class="menu__item--2"></div>
+          <div class="menu__item--3"></div>
         </div>
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
@@ -45,27 +62,321 @@
           </ul>
           <!-- SOCIAL ICON -->
           <div class="nav__social" id="nav-social">
-            <a href="#" class="nav__icon"
+            <a
+              href="https://www.linkedin.com/in/samir-montalvan-mendoza-3426191a7/"
+              class="nav__social-icon"
+              target="_blank"
               ><i class="bx bxl-linkedin-square"></i
             ></a>
-            <a href="#" class="nav__icon"><i class="bx bxl-instagram"></i></a>
+            <a
+              href="#"
+              class="nav__social-icon"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="bx bxl-instagram"></i
+            ></a>
             <a
               href="https://codepen.io/samir-montalvan"
               target="_blank"
-              class="nav__icon"
+              rel="noopener noreferrer"
+              class="nav__social-icon"
               ><i class="bx bxl-codepen"></i
             ></a>
-            <a href="#" class="nav__icon"><i class="bx bxl-github"></i></a>
+            <a
+              href="https://github.com/Samir-MM"
+              class="nav__social-icon"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="bx bxl-github"></i
+            ></a>
           </div>
-        </div>
-        <div class="nav__toggle" id="nav-toggle">
-          <i class="bx bx-menu"></i>
         </div>
       </nav>
     </header>
+    <!-- SECTION HOME START -->
+    <section class="home bd-container">
+      <div class="home__left">
+        <div class="home__content">
+          <h2 class="home__subtitle">Hola soy</h2>
+          <h1 class="home__title">Samir Montalvan</h1>
+          <p class="home__description">Front-end Developer</p>
+          <a href="#" class="home__button"> Contactame</a>
+        </div>
+      </div>
+      <div class="home__right">
+        <div class="home__canvas">
+          <div class="canvas-slides">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <!-- SLIDE 1 -->
+                <div class="Slide Slide--projects swiper-slide">
+                  <h1 class="Slide-name" data-swiper-parallax="-100">
+                    Proyectos
+                  </h1>
+                  <p class="Slide-text" data-swiper-parallax="-150">
+                    Descubre casos de estudio
+                  </p>
+                  <p class="Slide-text" data-swiper-parallax="-200">
+                    explicados y documentados.
+                  </p>
+                  <a
+                    class="Slide-link"
+                    data-swiper-parallax="-250"
+                    href="#"
+                    target="_blank"
+                    >Leer más &rarr;</a
+                  >
+                  <figure
+                    class="Slide-image"
+                    data-swiper-parallax="-400"
+                  ></figure>
+                  <div
+                    class="Slide-decor one"
+                    data-swiper-parallax="-700"
+                  ></div>
+                  <div
+                    class="Slide-decor two"
+                    data-swiper-parallax="-600"
+                  ></div>
+                  <div
+                    class="Slide-decor three"
+                    data-swiper-parallax="-500"
+                  ></div>
+                </div>
+
+                <!-- SLIDE 2 -->
+                <div class="Slide Slide--snippets swiper-slide">
+                  <h1 class="Slide-name" data-swiper-parallax="-100">
+                    Fragmentos
+                  </h1>
+                  <p class="Slide-text" data-swiper-parallax="-150">
+                    ¡Consejos sencillos y prácticos
+                  </p>
+                  <p class="Slide-text" data-swiper-parallax="-200">
+                    relacionados con HTML, CSS, JS y más!
+                  </p>
+                  <a
+                    class="Slide-link"
+                    data-swiper-parallax="-250"
+                    href="#"
+                    target="_blank"
+                    >Leer más &rarr;</a
+                  >
+                  <figure
+                    class="Slide-image"
+                    data-swiper-parallax="-400"
+                  ></figure>
+                  <div
+                    class="Slide-decor two"
+                    data-swiper-parallax="-600"
+                  ></div>
+                  <div
+                    class="Slide-decor three"
+                    data-swiper-parallax="-500"
+                  ></div>
+                  <div
+                    class="Slide-decor one"
+                    data-swiper-parallax="-700"
+                  ></div>
+                </div>
+                <!-- SLIDE 3 -->
+                <div class="Slide Slide--cheatsheet swiper-slide">
+                  <h1 class="Slide-name" data-swiper-parallax="-100">
+                    Cheatsheet
+                  </h1>
+                  <p class="Slide-text" data-swiper-parallax="-150">
+                    Hojas de referencia
+                  </p>
+                  <p class="Slide-text" data-swiper-parallax="-200">
+                    de diferentes tecnologías.
+                  </p>
+                  <a
+                    class="Slide-link"
+                    data-swiper-parallax="-250"
+                    href="#"
+                    target="_blank"
+                    >Leer más &rarr;</a
+                  >
+                  <figure
+                    class="Slide-image"
+                    data-swiper-parallax="-400"
+                  ></figure>
+                  <div
+                    class="Slide-decor two"
+                    data-swiper-parallax="-600"
+                  ></div>
+                  <div
+                    class="Slide-decor three"
+                    data-swiper-parallax="-500"
+                  ></div>
+                  <div
+                    class="Slide-decor one"
+                    data-swiper-parallax="-700"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SETUP BACKGROUND ANIMATION -->
+    <script id="2d-fragment-shader" type="x-shader/x-fragment">
+      // <![CDATA[
+          #ifdef GL_ES
+          precision mediump float;
+          #endif
+
+          #define PI 3.14159265359;
+
+          uniform vec2 u_resolution;
+          uniform vec2 u_mouse;
+          uniform float u_time;
+          uniform float u_xpos;
+          uniform float u_ypos;
+
+        vec3 mod289(vec3 x) {
+          return x - floor(x * (1.0 / 289.0)) * 289.0;
+        }
+
+        vec4 mod289(vec4 x) {
+          return x - floor(x * (1.0 / 289.0)) * 289.0;
+        }
+
+        vec4 permute(vec4 x) {
+             return mod289(((x*34.0)+1.0)*x);
+        }
+
+        vec4 taylorInvSqrt(vec4 r)
+        {
+          return 1.79284291400159 - 0.85373472095314 * r;
+        }
+
+        float snoise(vec3 v)
+          {
+          const vec2  C = vec2(1.0/6.0, 1.0/3.0) ;
+          const vec4  D = vec4(0.0, 0.5, 1.0, 2.0);
+
+          vec3 i  = floor(v + dot(v, C.yyy) );
+          vec3 x0 =   v - i + dot(i, C.xxx) ;
+
+          vec3 g = step(x0.yzx, x0.xyz);
+          vec3 l = 1.0 - g;
+          vec3 i1 = min( g.xyz, l.zxy );
+          vec3 i2 = max( g.xyz, l.zxy );
+
+          vec3 x1 = x0 - i1 + C.xxx;
+          vec3 x2 = x0 - i2 + C.yyy;
+          vec3 x3 = x0 - D.yyy;
+
+          i = mod289(i);
+          vec4 p = permute( permute( permute(
+                     i.z + vec4(0.0, i1.z, i2.z, 1.0 ))
+                   + i.y + vec4(0.0, i1.y, i2.y, 1.0 ))
+                   + i.x + vec4(0.0, i1.x, i2.x, 1.0 ));
+
+          float n_ = 0.142857142857;
+          vec3  ns = n_ * D.wyz - D.xzx;
+
+          vec4 j = p - 49.0 * floor(p * ns.z * ns.z);
+
+          vec4 x_ = floor(j * ns.z);
+          vec4 y_ = floor(j - 7.0 * x_ );
+
+          vec4 x = x_ *ns.x + ns.yyyy;
+          vec4 y = y_ *ns.x + ns.yyyy;
+          vec4 h = 1.0 - abs(x) - abs(y);
+
+          vec4 b0 = vec4( x.xy, y.xy );
+          vec4 b1 = vec4( x.zw, y.zw );
+
+          vec4 s0 = floor(b0)*2.0 + 1.0;
+          vec4 s1 = floor(b1)*2.0 + 1.0;
+          vec4 sh = -step(h, vec4(0.0));
+
+          vec4 a0 = b0.xzyw + s0.xzyw*sh.xxyy ;
+          vec4 a1 = b1.xzyw + s1.xzyw*sh.zzww ;
+
+          vec3 p0 = vec3(a0.xy,h.x);
+          vec3 p1 = vec3(a0.zw,h.y);
+          vec3 p2 = vec3(a1.xy,h.z);
+          vec3 p3 = vec3(a1.zw,h.w);
+
+          vec4 norm = taylorInvSqrt(vec4(dot(p0,p0), dot(p1,p1), dot(p2, p2), dot(p3,p3)));
+          p0 *= norm.x;
+          p1 *= norm.y;
+          p2 *= norm.z;
+          p3 *= norm.w;
+
+          vec4 m = max(0.6 - vec4(dot(x0,x0), dot(x1,x1), dot(x2,x2), dot(x3,x3)), 0.0);
+          m = m * m;
+          return 42.0 * dot( m*m, vec4( dot(p0,x0), dot(p1,x1),
+                                        dot(p2,x2), dot(p3,x3) ) );
+          }
+        // 255,165,0
+          void main() {
+            vec3 color1 = vec3(215.0/255.0,243.0/255.0,254.0/255.0);
+            vec3 color2 = vec3(190.0/255.0,244.0/255.0,192.0/255.0);
+            vec3 color3 = vec3(132.0/255.0,157.0/255.0,196.0/255.0); 
+            vec3 color4 = vec3(161.0/255.0,135.0/255.0,93.0/255.0);
+            vec3 color5 = vec3(213.0/255.0,191.0/255.0,149.0/255.0);
+            vec2 lt = vec2(gl_FragCoord.x + u_xpos, gl_FragCoord.y + u_ypos);
+            vec2 st = lt.xy/u_resolution.xy;
+            st.x *= u_resolution.x/u_resolution.y;
+            vec3 color = vec3(0.0);
+            vec2 pos = vec2(st*0.6);
+            float DF = 0.0;
+            float a = 0.0;
+            vec2 vel = vec2(u_time*.1);
+            st.xy *= 0.4;
+            float r = snoise(vec3(st.x,st.y,u_time * 0.1));
+            if(r >= -1.0 && r < -0.6){
+              color = color1;
+            } else if(r >= -0.6 && r < -0.2){
+           color = color2;
+            } else if(r >= -0.2 && r < 0.2){
+              color = color3;
+            } else if(r >= 0.2 && r < 0.6){
+               color = color4;
+            } else {
+              color = color5;
+            }
+            gl_FragColor = vec4(color,1);
+          }
+        // ]]>
+    </script>
+    <script id="2d-vertex-shader" type="x-shader/x-vertex">
+      // <![CDATA[
+          attribute vec2 a_position;
+          void main() {
+            gl_Position = vec4(a_position, 0, 1);
+          }
+        // ]]>
+    </script>
+    <!-- SCRIPT JQUERY -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- SCRIPT SWIPER JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.jquery.min.js"></script>
     <!-- SCRIPT TO LOTTIE JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.8/lottie.min.js"></script>
-    <!-- SCRIPT TO MAIN JS -->
+    <!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.8/lottie.min.js"></script> -->
+    <!--  SCRIPT TO BG ANIMATION FILE -->
+    <script src="/assets/js/bganimate.js"></script>
+    <!-- SCRIPT GSAP LIBRARY -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
+      integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- SCRIPT TO MAIN JS FILE-->
     <script src="/assets/js/main.js"></script>
   </body>
 </html>
