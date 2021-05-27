@@ -75,16 +75,19 @@ const buttonMagnetic = document
     })
   );
 
-const buttonMagneticAlt = document.querySelectorAll(".home__button > .button").forEach((el) =>
-  el.addEventListener("mouseleave", function () {
-    this.style.transform = "translate3d(0px, 0px, 0px)";
-    this.style.transform += "rotate3d(0, 0, 0, 0deg)";
-    this.children[0].style.transform = "translate3d(0px, 0px, 0px)";
-  })
-);
-
-const mobileDisplay = matchMedia("(max-width: 1068px)");
-mobileDisplay.addEventListener(buttonMagnetic);
-buttonMagnetic(mobileDisplay);
-mobileDisplay.addEventListener(buttonMagneticAlt);
-buttonMagneticAlt(mobileDisplay);
+const buttonMagneticAlt = document
+  .querySelectorAll(".home__button > .button")
+  .forEach((el) =>
+    el.addEventListener("mouseleave", function () {
+      this.style.transform = "translate3d(0px, 0px, 0px)";
+      this.style.transform += "rotate3d(0, 0, 0, 0deg)";
+      this.children[0].style.transform = "translate3d(0px, 0px, 0px)";
+    })
+  );
+document.addEventListener("DOMContentLoaded", function (event) {
+  const mobileDisplay = matchMedia("(max-width: 1068px)");
+  mobileDisplay.addEventListener(buttonMagnetic);
+  buttonMagnetic(mobileDisplay);
+  mobileDisplay.addEventListener(buttonMagneticAlt);
+  buttonMagneticAlt(mobileDisplay);
+});
