@@ -208,6 +208,7 @@
 }
 
 .home__button .button.fill {
+  border: none;
   background: var(--accent-color);
 }
 
