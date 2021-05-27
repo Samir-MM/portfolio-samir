@@ -28,6 +28,7 @@
   &__title {
     font-size: var(--display-font-size);
     font-weight: var(--font-semi-bold);
+    margin: 0.65rem 0;
   }
   &__button {
     display: block;
@@ -289,7 +290,7 @@
     &__subtitle,
     &__title,
     &__description {
-      color: var(--body-color);
+      color: var(--first-color);
     }
     &__canvas {
       margin: 0;
