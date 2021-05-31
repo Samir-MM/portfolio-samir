@@ -6,9 +6,9 @@
   --size-menu-boton: calc(0vw - 35px);
   --transition-bounce: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
   /* COLORS */ /* #27262C */
-  --body-color: #e8ebf3;
+  --body-color: #fdfbf3;
   --text-color: #343a46;
-  --first-color: #ecf0f7;
+  --first-color: #faf9f3e1;
   --accent-color: #1C3A59;
   --proyects-color: #e16684;
   --fragmentos-color: #edcd5a;
@@ -16,13 +16,14 @@
   /* FONT */
   --body-font: "Source Sans Pro", sans-serif;
   --title-font: "Montserrat", sans-serif;
-  --normal-font-size: 1.1rem;
+  --normal-font-size: 1.15rem;
   --big-font-size: 1.25rem;
   --biggest-font-size: 1.55rem;
   --display-font-size: 4.65rem;
   --font-normal: 400;
   --font-medium: 600;
   --font-semi-bold: 700;
+  --font-bold: 900;
 
   /* Z-INDEX */
   --z-tooltip: 10; //layer up visible

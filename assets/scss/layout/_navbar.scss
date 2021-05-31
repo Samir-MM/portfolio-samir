@@ -25,7 +25,7 @@
     background: rgba(253, 250, 246, 0.75); /*FIRST COLOR VARIABLES */
     padding: 0.65rem 1.65rem;
     backdrop-filter: blur(4px);
-    border-radius: 5px;
+    border-radius: 4px;
     &__menu {
       display: flex;
       justify-content: center;
@@ -44,10 +44,13 @@
       color: var(--text-color);
       font-size: var(--normal-font-size);
     }
+    &__social-title {
+      display: none;
+    }
     &__social-icon {
       color: var(--text-color);
       font-size: var(--biggest-font-size);
-      margin: 0 0.25rem;
+      margin: 0 0.45rem;
     }
     &__toggle {
       display: none;
