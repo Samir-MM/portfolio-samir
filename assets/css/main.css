@@ -118,12 +118,24 @@
     font-size: var(--big-font-size);
   }
   .nav__social {
-    margin: 1.65rem 2.65rem;
+    margin: 1.85rem 2.65rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
-  .nav__social-icon i {
-    padding: 0.65rem 0;
+  .nav__social-title {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+    font-size: var(--normal-font-size);
+    align-self: flex-end;
+    margin-bottom: 0.85rem;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--accent-color);
+  }
+  .nav__social-icon {
+    text-align: center;
+    padding-bottom: 0.65rem;
     font-size: var(--display-font-size);
   }
 }
