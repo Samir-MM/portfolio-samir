@@ -131,7 +131,6 @@
     align-self: flex-end;
     margin-bottom: 0.85rem;
     text-transform: uppercase;
-    border-bottom: 1px solid var(--accent-color);
   }
   .nav__social-icon {
     text-align: center;
